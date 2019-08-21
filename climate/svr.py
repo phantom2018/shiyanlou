@@ -19,6 +19,21 @@ import matplotlib.dates as mdates
 from dateutil import parser
 
 
+
+#dist is a list which contains the distance from city to sea
+dist = [df_ravenna['dist'][0],
+    df_cesena['dist'][0],
+    df_faenza['dist'][0],
+    df_ferrara['dist'][0],
+    df_bologna['dist'][0],
+    df_mantova['dist'][0],
+    df_piacenza['dist'][0],
+    df_milano['dist'][0],
+    df_asti['dist'][0],
+    df_torino['dist'][0]
+]
+
+
 from sklearn.svm import SVR
 dist1 = dist[0:5] #which are close to the sea
 dist2 = dist[5:10] #which are far from the sea
